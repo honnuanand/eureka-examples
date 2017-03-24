@@ -1,0 +1,8 @@
+---
+applications:
+- name: eureka-consumer
+  memory: 512M
+  instances: 2
+  path: target/eureka-consumer-1.0-SNAPSHOT.jar 
+  services:
+  - service-registry

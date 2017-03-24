@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: helloworldService
+server:
+  port: 8080
+security:
+  basic:
+    enabled: false
+management:
+  security:
+    enabled: false
+    env:
+      enabled: true
+    defaults:
+      enabled: true
+  context-path: /admin
+  cloudfoundry:
+    enabled: true
+    skip-ssl-validation: true
+  info:
+    build:
+      enabled: true
+    env:
+      enabled: true
+
+
